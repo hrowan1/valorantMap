@@ -1,0 +1,39 @@
+<DOCTYPE! html>
+
+<html>
+    <head>
+        <script src="./script.js" async defer></script>
+        <link rel="stylesheet" href="general.css">
+    </head>
+
+    <body onload='createList()'>
+        <div style="display: inline-flex;">
+            <div id='bkdiv' style="height:900;width:900">
+                <img id=mapImage>
+                <div class='agent' id='agent0' style="height:60;width:60">
+                    <img class='agenti' src="./Agents/Astra.png" style="height:60;width:60">
+                </div>
+            </div>
+            <div id='selectorDiv'>
+                <div id='agentDiv'>
+                    <div id='AstraDiv'>
+                        <input type='checkbox' id='checkboxAstra' />
+                        <label class='agentHover' for='checkboxAstra'>
+                            <img class='agentImg' id='Astra'>
+                        </label>
+                    </div>
+                </div>
+                <div id='mapDiv'>
+                    <button class='mapButton' type='button' value='ascent' onclick='changeMap(value)'>Ascent</button>
+                    <button class='mapButton' type='button' value='bind' onclick='changeMap(value)'>Bind</button>
+                    <button class='mapButton' type='button' value='breeze' onclick='changeMap(value)'>Breeze</button>
+                    <button class='mapButton' type='button' value='fracture' onclick='changeMap(value)'>Fracture</button>
+                    <button class='mapButton' type='button' value='haven' onclick='changeMap(value)'>Haven</button>
+                    <button class='mapButton' type='button' value='icebox' onclick='changeMap(value)'>Icebox</button>
+                    <button class='mapButton' type='button' value='pearl' onclick='changeMap(value)'>Pearl</button>
+                    <button class='mapButton' type='button' value='split' onclick='changeMap(value)'>Split</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
